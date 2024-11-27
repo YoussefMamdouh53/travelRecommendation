@@ -10,6 +10,7 @@
 
 header {
     width: 100vw;
+    position: fixed;
 }
 
 nav {
@@ -17,7 +18,7 @@ nav {
     justify-content: space-between;
     justify-items: center;
     padding: 1rem;
-    background-color: var(--primary);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 nav .links {
@@ -54,8 +55,7 @@ button {
     background-color: var(--primary);
     outline: none;
     border: none;
-    border-radius: 0.25rem;
-    /* height: 30px; */
+    border-radius: 0.30rem;
     padding-inline: 0.75rem;
     padding-block: 0.50rem;
     color: white;
@@ -63,4 +63,62 @@ button {
 
 button:hover {
     opacity: 0.9;
+}
+
+.hero {
+    background-image: linear-gradient(90deg, var(--primary), rgba(0, 0, 0, 0)), url('./images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.hero > .side-hero {
+    padding: 79px 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: fit-content;
+    height: 100vh;
+}
+
+.vl {
+    height: 35vh;
+    width: 2px;
+    background-color: white;
+}
+
+.hero .socialButtons {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.hero .main-text {
+    color: white;
+}
+
+.hero .main-text > h1 {
+    text-transform: uppercase;
+    font-size: 5rem;
+    font-weight: 900;
+    max-width: 700px;
+}
+
+.hero .main-text > p {
+    margin-block: 2rem;
+    font-size: 1.25rem;
+    max-width: 400px;
+    color: #ededed;
+}
+
+.hero .main-text > button {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding-inline: 2rem;
+    padding-block: 0.75rem;
+    background-color: rgba(51, 138, 141, 0.7);
 }

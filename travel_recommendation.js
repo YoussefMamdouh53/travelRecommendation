@@ -29,7 +29,7 @@ function search() {
             if (key == 'countries'){
                 val.forEach(element => {
                     element['cities'].forEach(c => {
-                        if (c.name.includes(query) || c.description.includes(query)) {
+                        if (c.name.includes(query) || c.description.includes(query) || element.name.includes(query) || key.includes(query)) {
                             result.push({name: c.name, imageUrl: c.imageUrl, description: c.description});
                         }
                     })
@@ -37,7 +37,7 @@ function search() {
             }
             else {
                 val.forEach(element => {
-                    if (element.name.includes(query) || element.description.includes(query)) {
+                    if (element.name.includes(query) || element.description.includes(query) || element.name.includes(query) || key.includes(query)) {
                         result.push({name: element.name, imageUrl: element.imageUrl, description: element.description});
                     }
                 })

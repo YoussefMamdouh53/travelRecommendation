@@ -213,3 +213,52 @@ form > input, form > textarea {
     border-radius: 0.25rem;
     padding: 1rem;
 }
+
+/* results  */
+
+#result {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    top: 100px;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    padding-right: 1rem;
+}
+
+#result .result-card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    width: 800px;
+    /* padding: 1rem; */
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+#result .result-card img {
+    object-fit: contain;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    padding: 0;
+}
+
+#result .result-card > * {
+    padding-inline: 1rem;
+}
+
+#result p {
+    text-wrap: wrap;
+}
+
+#result .result-card button {
+    width: fit-content;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+#result .result-card p {
+    color: darkgrey;
+}

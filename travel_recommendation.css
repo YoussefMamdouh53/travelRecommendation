@@ -74,7 +74,7 @@ button:hover {
     height: 100vh;
     display: flex;
     align-items: center;
-    gap: 4rem;
+    gap: 5rem;
 }
 
 .hero > .side-hero {
@@ -187,4 +187,29 @@ button:hover {
 
 .main-text .desc strong {
     font-weight: 800;
+}
+
+/* contact page  */
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    border-radius: 0.25rem;
+    flex-grow: 1;
+    margin-right: 2rem;
+}
+
+form > * {
+    font-size: 1.25rem;
+    color: white;
+}
+
+form > input, form > textarea {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid darkgrey;
+    border-radius: 0.25rem;
+    padding: 1rem;
 }

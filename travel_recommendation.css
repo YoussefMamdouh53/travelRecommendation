@@ -14,15 +14,15 @@ header {
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.6);
 }
 
 nav .links {
     align-self: center;
+    justify-self: center;
 }
 
 nav .links > a {
@@ -41,8 +41,10 @@ nav .logo {
 
 nav .searchContainer {
     background-color: white;
+    width: fit-content;
     border-radius: 2rem;
     padding: 0.5rem 1rem;
+    justify-self: right;
 }
 
 #search {
